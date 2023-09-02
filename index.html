@@ -32,6 +32,13 @@
                 vertical-align: middle; /* 텍스트와 이미지를 수직으로 정렬 */
                 margin-right: 10px; /* 로고와 텍스트 사이의 간격 조절 */
             }
+            /* HTML 요소에 대한 스타일 */
+            .box {
+                width: 99%;
+                height: 25px;
+                border-bottom: 2px solid rgba(118, 118, 118, 0.371);; /* 하단 테두리만 solid로 지정 */
+            }
+
         </style>
     </head>
     <header>
@@ -41,21 +48,21 @@
             Programming Blog of Hyeon
         </h1>
         
-        
-        <div style="float:left">
-            <a href="https://www.youtube.com/channel/UC9-Glbe8vLHGZvUpfTPP0AA" target="_blank">
-                <h5 class="link">
-                    Official YouTube
-                </h5>
-            </a>
+        <div class="box">
+            <div style="float:left">
+                <a href="https://www.youtube.com/channel/UC9-Glbe8vLHGZvUpfTPP0AA" target="_blank">
+                    <h5 class="link">
+                        Official YouTube
+                    </h5>
+                </a>
+            </div>
+            <div style="float:left">
+                <a href="https://blog.naver.com/hanshs1234" target="_blank">
+                    <h5 class="link private-blog">
+                        Public Naver Blog
+                    </h5>
+                </a>
+            </div>
         </div>
-        <div style="float:left">
-            <a href="https://blog.naver.com/hanshs1234" target="_blank">
-                <h5 class="link private-blog">
-                    Public Naver Blog
-                </h5>
-            </a>
-        </div>
-        
     </header>
 </html>
