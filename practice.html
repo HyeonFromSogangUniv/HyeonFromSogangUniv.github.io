@@ -1,81 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="author" content="Daewon Kim">
         <title>Blog of Hyeon</title>
+        <meta name="author" content="Daewon Kim">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+            #logo{
+                width:100%;
+                height: 60px;
+                text-decoration: none;
+                background-color: #222;
+                margin-left:0;
+                margin-right:0;
+                margin-top:0;
+                margin-bottom:1px;
+                border: 3px solid hsl(201, 71%, 69%);
+            }
+            .link{
+                text-decoration: none;
+                margin-top: 5px;
+                font-family: 'Lobster', cursive;
+                font-weight: lighter;
+                color: #222;
+            }
+            /* 추가된 스타일 */
+            .link {
+                margin-left: 10px;
+                margin-right: 10px; /* Official YouTube와 Private Naver Blog 사이의 간격을 조절 */
+            }
+            .private-blog {
+                margin-left: 1px; /* Private Naver Blog를 왼쪽으로 이격 */
+            }
+            #logo img {
+                vertical-align: middle; /* 텍스트와 이미지를 수직으로 정렬 */
+                margin-right: 10px; /* 로고와 텍스트 사이의 간격 조절 */
+            }
+            /* HTML 요소에 대한 스타일 */
+            .box {
+                width: 99.9%;
+                height: 23px;
+                border-right: 3px solid #fff;
+                border-left: 3px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+
+        </style>
     </head>
-    <body>
-        <header>
-            <img src="scholar.jpg" alt="Scholar" width="100%" height="0.75%">
-            <a href="https://www.youtube.com/channel/UC9-Glbe8vLHGZvUpfTPP0AA" target="_blank"><img src="https://comicstack.io/_next/image?url=https%3A%2F%2Fresource.comicstack.io%2Fpost%2F410ae1c22dfa831ab6df65fb775d712a%2F06c8157fec4c.png&w=640&q=100" alt= "YouTube Channel" width="100"></a>
-        </header>
-        <div id="container">
-            <h3>Info</h3>
-            <table border="1">
-                <tr>
-                    <td><b>Nickname</b></td>
-                    <td>     Hyeon Kim</td>
-                </tr>
-                <tr>
-                    <td><b>University</b></td>
-                    <td>     Sogang Univ</td>
-                </tr>
-            </table>
-            <br><br><br>
-            <table border="1">
-                <caption><b>Possible Programming Languages</b></caption>
-                <thead>
-                    <tr>
-                        <th>C/C++</th>
-                        <th>Python</th>
-                        <th>JavaScript</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2023/03/08</td>
-                        <td>2023/06/22</td>
-                        <td>2023/??/??</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h1 style="padding: 10px; background-color: #222; color: #fff;">
-                C/C++ Problem Solving
+    <header style="background-color: #191818d2;">
+        <div id="logo">
+            <h1 style="text-align: center; text-shadow: 2.4px 2.4px 5px hsl(201, 73%, 77%); color:#fff">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOZFIyGW1vkf8dTpQcfXZzc_77Svh5jpt5_A&usqp=CAU" alt="Logo" width="40" height="40" style="border-radius: 50%;"> 
+                Programming Blog of Hyeon
             </h1>
-            <h3>Graph</h3>
-            <blockquote>Algorithm questions applying graph theory<br>For instance, DFS, BFS, etc.<br><br><strong>[Algorithms that I can apply]</strong>
-                <ol type="A">
-                    <li>DFS</li>
-                    <li>BFS</li>
-                    <li>Floyd-Warshall</li>
-                    <li>Dijkstra</li>
-                </ol></blockquote>
-            <h3>Data Structure</h3>
-            <blockquote>Basic structures for manipulating datas.<br><strong>Very efficient</strong> for PS.<br><dl>
-                <dt><b>For instance</b></dt>
-                <dd>Stack</dd>
-                <dd>Queue</dd>
-                <dd>Tree</dd>
-            </dl></blockquote>
-            <table border="2">
-                <thead>
-                    <tr>
-                        <td colspan="3">
-                            Possible Languages
-                        </td>
-                    </tr>
-                </thead>
-                <tr>
-                    <td>C/C++</td>
-                    <td>Python</td>
-                    <td>JavaScript</td>
-                </tr>
-                <tr>
-                    <td>2023/03/08</td>
-                    <td>2023/06/22</td>
-                    <td>2023/??/??</td>
-                </tr>
-            </table>
         </div>
-    </body>
+        <div class="box">
+            <div style="float:left">
+                <a href="https://www.youtube.com/channel/UC9-Glbe8vLHGZvUpfTPP0AA" target="_blank">
+                    <h5 class="link" style="color:#fff">
+                        Official YouTube
+                    </h5>
+                </a>
+            </div>
+            <div style="float:left">
+                <a href="https://blog.naver.com/hanshs1234" target="_blank">
+                    <h5 class="link private-blog" style="color:#fff">
+                        Public Naver Blog
+                    </h5>
+                </a>
+            </div>
+        </div>
+    </header>
 </html>
