@@ -11,19 +11,42 @@
                 margin: 0;
                 border: 3px solid hsl(201, 71%, 69%);
             }
+            .link{
+                margin-top: 5px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight: lighter;
+                color: #222;
+            }
+            /* 추가된 스타일 */
+            .link {
+                margin-right: 10px; /* Official YouTube와 Private Naver Blog 사이의 간격을 조절 */
+            }
+            .private-blog {
+                margin-left: 1px; /* Private Naver Blog를 왼쪽으로 이격 */
+            }
         </style>
     </head>
     <header>
         
-        <h1 id="logo" style="text-align: center;;">
+        <h1 id="logo" style="text-align: center;">
             Programming Blog of Hyeon
         </h1>
-        <div>
-            <p>
-                <a href="https://www.youtube.com/channel/UC9-Glbe8vLHGZvUpfTPP0AA">
-                    <h5>Official YouTube</h5>
-                </a>
-            </p>
+        
+        
+        <div style="float:left">
+            <a href="https://www.youtube.com/channel/UC9-Glbe8vLHGZvUpfTPP0AA">
+                <h6 class="link">
+                    <b>Official YouTube</b>
+                </h6>
+            </a>
         </div>
+        <div style="float:left">
+            <a href="https://blog.naver.com/eodnjs5498">
+                <h6 class="link private-blog">
+                    <b>Private Naver Blog</b>
+                </h6>
+            </a>
+        </div>
+        
     </header>
 </html>
