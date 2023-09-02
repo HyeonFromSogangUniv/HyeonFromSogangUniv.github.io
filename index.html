@@ -37,11 +37,19 @@
             }
             /* HTML 요소에 대한 스타일 */
             .box {
-                width: 99.9%;
+                width: 100%;
                 height: 23px;
                 border-right: 3px solid #fff;
                 border-left: 3px solid #fff;
                 border-bottom: 2px solid #fff;
+            }
+            #sidebar {
+                margin-left:10px;
+                width: 170px;
+                height: 650px;
+                position: absolute; /* 절대 위치로 설정 */
+                left: 0; /* 왼쪽에 붙이기 */
+                background-color: #565353;
             }
 
         </style>
@@ -70,4 +78,9 @@
             </div>
         </div>
     </header>
+    <body>
+        <div id="sidebar">
+            
+        </div>
+    </body>
 </html>
