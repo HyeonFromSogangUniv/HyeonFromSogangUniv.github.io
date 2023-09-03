@@ -74,8 +74,18 @@
             }
 
             #search input[type="search"] {
-                width: 50%; /* 또는 다른 원하는 너비값 */
-                height: 30px;
+                width: 40%;
+                height: 25px;
+                margin-top: -19px;
+                border-radius: 15px 0 0 15px; /* 왼쪽 상단과 왼쪽 하단 부분을 동그랗게 만듭니다. */
+            }
+
+            #search input[type="submit"] {
+                width: 60px;
+                height: 25px;
+                margin-left: 0;
+                margin-top: -19px;
+                border-radius: 0 15px 15px 0; /* 오른쪽 상단과 오른쪽 하단 부분을 동그랗게 만듭니다. */
             }
 
             #back {
@@ -198,7 +208,7 @@
             </ul>
         </div>
         <div id="search" style="text-align: center; height: 35px;">
-            <input type="search" style="width: 40%; height: 25px; text-align:center; margin-top: -19px;">
+            <input type="search" style="width: 40%; height: 25px; margin-top: -19px;">
             <input type="submit" value="Search" style="width: 60px; height: 25px; margin-left:0; margin-top: -19px;">
         </div>
         
